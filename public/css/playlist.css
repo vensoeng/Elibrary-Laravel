@@ -1,0 +1,109 @@
+/* ======================this is body================================> */
+body {
+  display: block;
+  margin: 0 auto;
+  width: 100%;
+  height: auto;
+  max-width: 100%;
+  background: var(--sg-main-bg);
+}
+.web-main-body {
+  max-width: 100%;
+  align-items: initial;
+}
+.web-content {
+  width: 100%;
+}
+.books {
+  display: block;
+  margin: 0 auto;
+}
+.books-body {
+  display: block;
+  margin: 0.5rem 1rem;
+}
+/* =============================this is style of playlists==================> */
+.playlists ul {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 1rem;
+}
+.playlists ul li {
+  width: 100%;
+  height: auto;
+  min-height: 98px;
+  overflow: hidden;
+  position: relative;
+  border-radius: 10px;
+  box-shadow: var(--sg-main-bg-search) 2px -2px 0px -2px inset,
+    var(--sg-main-bg-search) 2px -2px 0px -3px,
+    var(--sg-main-bg-search) 4px -2px,
+    var(--sg-main-bg-btn-signin-hover) 8px -7px 0px -2.2px;
+  cursor: pointer;
+}
+.playlists ul li::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  top: 0;
+  background-image: linear-gradient(
+    90deg,
+    #0c151d 25%,
+    rgba(13, 18, 26, 0.68) 70%,
+    rgba(7, 9, 20, 0)
+  );
+  z-index: 1;
+}
+.playlists ul li .img {
+  display: block;
+  margin: 0 auto;
+  overflow: hidden;
+  width: 100%;
+  height: 100%;
+  max-height: 187px;
+  z-index: 0;
+}
+.playlists ul li .img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: ease-in-out 0.5s;
+}
+.playlists ul li:hover .img img {
+  margin-left: -10%;
+  scale: 1.2;
+}
+.playlists ul li .text {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  margin-left: 1rem;
+  color: var(--sg-color-text-hover);
+  z-index: 5;
+  line-height: 1.7;
+  transition: ease-in-out 0.5s;
+}
+.playlists ul li:hover .text {
+  left: 55%;
+}
+.playlists ul li .text > .db-c {
+  margin: 0 0rem;
+}
+.playlists ul li .text h2 {
+  font-size: 1rem;
+  font-family: var(--sg-font-noto);
+}
+.playlists ul li .text p {
+  text-transform: uppercase;
+  font-size: 0.8rem;
+  font-family: var(--sg-font-noto);
+}
+.playlists ul li .text p span {
+  font-size: 0.7rem;
+  margin: 0 0.2rem;
+}

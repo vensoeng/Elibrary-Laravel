@@ -1,0 +1,308 @@
+.web-aside {
+    position: sticky;
+    top: 0;
+    width: 18%;
+    min-width: 18%;
+    height: auto;
+    max-height: 100vh;
+    min-height: 100vh;
+    margin-top: -60px;
+    background: var(--sg-main-bg);
+}
+.web-aside > .con {
+    /* position: sticky;
+    top: 60px; */
+}
+.web-aside .head-logo {
+    height: 60px;
+    top: -60px;
+    left: 0;
+    width: 100%;
+    background: var(--sg-main-bg);
+}
+.web-aside .head-logo .icon-bar {
+    margin: 0 0.5rem;
+    font-size: 1rem;
+    color: var(--sg-color-text);
+}
+.web-aside .head-logo .logo {
+    width: 130px;
+    max-height: 38px;
+    overflow: hidden;
+}
+.web-aside .head-logo .logo a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+.web-aside .head-logo .logo img {
+    width: 100%;
+    object-fit: cover;
+}
+.web-aside .menu {
+    display: block;
+    margin: 0 0.5rem;
+    overflow: hidden;
+    overflow-y: scroll;
+    height: 80.2vh;
+    margin-right: 0.2rem;
+}
+.web-aside .menu .head {
+    margin: 0 1.2rem;
+    height: 35px;
+}
+.web-aside .menu .head h2 {
+    text-transform: uppercase;
+    font-size: 0.8rem;
+    font-weight: 550;
+    color: var(--sg-color-text-hover);
+}
+.web-aside .menu li {
+    overflow: hidden;
+    border-radius: 10px;
+    margin: 0.3rem 0.5rem;
+}
+.web-aside .menu li:first-child {
+    margin-top: 0rem;
+}
+.web-aside .menu li a {
+    font-weight: 500;
+    padding: 0.4rem 0rem;
+    border-radius: 10px;
+    margin-top: 0.5rem;
+    overflow: hidden;
+    box-sizing: border-box;
+    outline: 1px solid transparent;
+    outline-offset: -1px;
+    color: var(--sg-color-text);
+}
+.web-aside .menu ul li a:hover {
+    background: var(--sg-main-bg-btn-signin);
+}
+.web-aside .menu ul li a:active {
+    border: 1px solid var(--sg-color-text);
+}
+.web-aside .menu ul .active a {
+    color: var(--sg-color-text-hover);
+    background: var(--sg-main-bg-btn-signin);
+}
+.web-aside .menu li a .icon {
+    width: 1.8rem;
+    height: 1.8rem;
+    margin-left: 0.6rem;
+}
+.web-aside .menu li a .text {
+    margin: 0 0.5rem;
+    font-size: 0.9rem;
+}
+.web-aside .menu li a .text h2 {
+    font-size: 0.9rem;
+    font-weight: 500;
+}
+.web-aside .menu .our-menu .icon {
+    box-sizing: border-box;
+    border: 1px solid var(--sg-main-bg-btn-signin);
+    border-radius: 8px;
+}
+.web-aside .footer {
+    height: 60px;
+}
+.web-aside .footer ul li {
+    font-size: 0.8rem;
+    font-weight: 300;
+    color: var(--sg-color-text);
+    margin: 0.3rem 1.2rem;
+}
+/* =========================this is nav active =======================> */
+.web-aside-active {
+    width: max-content;
+    min-width: max-content;
+}
+.web-aside-active .menu .head {
+    display: none;
+}
+.web-aside-active .menu li a {
+    padding: 0.4rem 0.8rem;
+}
+.web-aside-active .menu li a .box {
+    display: block;
+}
+.web-aside-active .menu li a .icon {
+    margin: 0 auto;
+}
+.web-aside-active .menu li a .text {
+    margin: 0 auto;
+    text-align: center;
+}
+.web-aside-active .footer {
+    display: none;
+}
+/* ==========================this is nav content===================> */
+.web-content nav {
+    position: sticky;
+    top: 60px;
+    overflow: hidden;
+    overflow: hidden;
+    background: var(--sg-main-bg);
+    backdrop-filter: blur(30px);
+    z-index: 100;
+}
+.web-content nav ul {
+    margin: 0.5rem 0rem;
+    overflow-y: hidden;
+    overflow-x: scroll;
+    max-width: 100%;
+}
+.web-content nav ul::-webkit-scrollbar {
+    display: none;
+}
+.web-content nav ul li {
+    margin: 0 0.4rem;
+    min-width: max-content;
+}
+.web-content nav ul li a {
+    overflow: hidden;
+    border-radius: 5px;
+    height: 28px;
+    padding: 0rem 0.6rem;
+    font-size: 0.9rem;
+    font-weight: 500;
+    cursor: pointer;
+    color: var(--sg-color-text);
+    font-family: var(--sg-font-noto);
+    background: var(--sg-main-bg-search);
+}
+.web-content nav ul li .a-i > i {
+    font-size: 0.6rem;
+    margin-left: 0.3rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0.2rem;
+    border-radius: 50rem;
+    /* background: var(--sg-color-text-hover); */
+}
+.web-content nav ul li a::first-letter {
+    text-transform: uppercase;
+}
+.web-content nav ul li a:hover {
+    background: var(--sg-main-bg-btn-signin-hover);
+}
+.web-content nav ul .main {
+    margin-left: 0rem;
+}
+.web-content nav ul .main a {
+    background: var(--sg-main-bg-btn-signin-hover);
+}
+.web-content nav ul .active a {
+    color: var(--sg-main-bg);
+    background: var(--sg-color-text-hover);
+}
+.web-content nav ul .active:hover a {
+    color: var(--sg-main-bg);
+    background: var(--sg-color-text);
+}
+.web-content nav ul li a::first-letter {
+    text-transform: uppercase;
+}
+
+@media only screen and (max-width: 1130px) {
+    .web-aside {
+        width: max-content;
+        min-width: max-content;
+    }
+    .web-aside .menu .head {
+        display: none;
+    }
+    .web-aside .menu li a {
+        padding: 0.4rem 0.8rem;
+    }
+    .web-aside .menu li a .box {
+        display: block;
+    }
+    .web-aside .menu li a .icon {
+        margin: 0 auto;
+    }
+    .web-aside .menu li a .text {
+        margin: 0 auto;
+        text-align: center;
+    }
+    .web-aside .footer {
+        display: none;
+    }
+}
+@media only screen and (max-width: 800px) {
+    .web-aside {
+        position: fixed;
+        left: -100%;
+        top: 0px;
+        width: 100%;
+        min-width: max-content;
+        margin-top: 0px;
+        z-index: 10000;
+        background: transparent;
+        transition: all all ease-in-out 0.3s;
+    }
+    .web-aside > .con {
+        position: relative;
+        width: 250px;
+        margin-top: 0px;
+        z-index: 10000;
+        background: var(--sg-main-bg);
+        overflow: hidden;
+    }
+    .web-aside > .as-bg {
+        position: absolute;
+        width: 100%;
+        height: 100vh;
+        background: black;
+        top: 0;
+        left: 0;
+        z-index: -0;
+        opacity: 0.5;
+        overflow: hidden;
+        overflow-y: scroll;
+    }
+    .web-aside > .as-bg::-webkit-scrollbar {
+        display: none;
+    }
+    .web-aside-active {
+        left: 0%;
+    }
+    .web-aside .head-logo {
+        position: initial;
+        display: flex;
+        margin-left: 1.2rem;
+    }
+    .web-aside .head-logo .logo {
+        width: 100px;
+    }
+    .web-aside-active .menu .head {
+        display: flex;
+    }
+    .web-aside-active .menu li a .box {
+        display: flex;
+    }
+    .web-aside-active .menu li a .box .icon {
+        margin: 0 0.6rem;
+    }
+    .web-aside-active .menu li a .box .text {
+        margin: 0 0rem;
+        text-align: left;
+    }
+    .web-aside-active .footer {
+        display: flex;
+    }
+    /* --------------this is nav content-----------> */
+    .web-content nav {
+        margin: 0 1rem;
+    }
+}
+@media only screen and (max-width: 447px) {
+    .web-content nav {
+        margin: 0 0.5rem;
+    }
+}

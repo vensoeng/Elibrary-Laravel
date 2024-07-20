@@ -1,0 +1,14 @@
+.noresul {
+    width: 100%;
+    min-height: 30vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    line-height: 1.5;
+    opacity: 0.8;
+    color: var(--sg-color-text-hover);
+}
+.noresul h2:last-child {
+    color: var(--sg-color-text-hover);
+}
